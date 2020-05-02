@@ -5,14 +5,16 @@
 
 .clearfix {
     content: "";
-    display: block;
+    display: table;
     clear: both;
 }
 
 .container {
-    border: 1px solid #212121;
     width: 1440px;
-    margin: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: PT Sans;
+    color: #525252;
 }
 
 .header {
@@ -31,9 +33,6 @@
 .header-brand {
     padding-top: 15px;
     font-size: 37px;
-    font-family: 'PT Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     text-transform: uppercase;
     line-height: 48px;
     color: #737373;
@@ -44,44 +43,34 @@
 .header-menu {
     overflow: hidden;
     padding-left: 106px;
-    padding-top: 31px;
-    font-family: 'PT Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
-    line-height: 18px;
     text-transform: uppercase;
-
+    padding-top: 6px;
 }
 
 
+.point-menu-block {
+    margin: 0 18px;
+    text-align: center;
+    display: inline-block;
+    line-height: 70px;
+    font-family: PT Sans;
+}
 
-.point-menu {
-    padding-left: 36px;
+.point-menu-block a {
     color: #525252;
     text-decoration: none;
-    font-size: 14px;
 }
 
-.point-menu-promotion {
-    padding-left: 58px;
-    color: black;
-    text-decoration: none;
-
-
-}
-
-
-/*
-.list-menu a:nth-child(7) {
-    background-image: url('img/promotion-bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
+.point-menu-block-promo {
     width: 162px;
     height: 67px;
-    background-size: cover;
+    background-image: url(img/promotion-bg.png);
 }
-*/
+
+.point-menu-block-promo a {
+    color: white;
+}
 
 .balance-body-block {
     width: 1440px;
@@ -91,7 +80,6 @@
 }
 
 .lotus-img {
-    background: url(lotus-flower-black-and-white-png-big-image-png-2178.png);
     mix-blend-mode: soft-light;
     position: absolute;
     width: 800px;
@@ -106,5 +94,175 @@
     height: 719.34px;
     right: 68px;
     top: 99px;
+
+}
+
+.intro-textcontent {
+    width: 534px;
+    margin: 250px 130px;
+    text-align: center;
+}
+
+.intro-trendtext {
+    font-size: 58px;
+    line-height: 75px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.intro-textcontent p {
+    margin-top: 25px;
+
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+.button-link {
+    text-decoration: none;
+    width: 168px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.main-button-link {
+    margin-top: 50px;
+    margin-right: 10px;
+    background-color: #F17AA0;
+    border: 2px solid #FFFFFF;
+}
+
+.second-button-link {
+    background-color: #D7698E;
+}
+
+.button-link:hover {
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+}
+
+/* Why we do Yoga */
+
+.whywedoyoga-block {
+    height: 330px;
+    padding: 100px 230px;
+}
+
+.whywedoyoga-h2 {
+    font-size: 37px;
+    line-height: 48px;
+}
+
+.whywedoyoga-desc {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.whywedoyoga-reasons-block {
+    padding-top: 50px;
+}
+
+.whywedoyoga-single-reason {
+    display: inline-flex;
+}
+
+.whywedoyoga-single-reason:nth-child(2) {
+    margin: 0 90px;
+}
+
+.whywedoyoga-reason-img-block {
+    margin-right: 30px;
+}
+
+.whywedoyoga-single-reason-header {
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+.whywedoyoga-single-reason-desc {
+    width: 180px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.whywedoyoga-reasons-block-second-line {
+    padding-top: 59px;
+}
+
+/* Inside our studio */
+
+.insideourstudio-block {
+    height: 627px;
+    padding: 50px 230px;
+}
+
+.insideourstudio-gallery-block {
+    margin-top: 50px;
+}
+
+.insideourstudio-gallery-single-img {
+    display: flex;
+    float: left;
+    background-color: #3C3C3C;
+    height: 206px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.insideourstudio-gallery-single-img:nth-child(2n) {
+    margin: 0 60px;
+}
+
+.insideourstudio-gallery-block-second-line {
+    margin-top: 35px;
+}
+
+.insideourstudio-gallery-single-img-link img {
+    border-radius: 5px;
+}
+
+.insideourstudio-gallery-single-img-link:hover img {
+    opacity: .5;
+}
+
+.insideourstudio-gallery-single-img:hover .zoom-icon{
+    display:block;
+}
+.zoom-icon {
+    position: absolute;
+    display: none;
+    width: 30px;
+    height: 30px;
+    top: 45%;
+    left: 45%;
+    background-image: url(img/icons8-zoom-in-1.png);
+}
+
+/* Follow us on Instagram */
+
+.followusoninstagram-block {
+    height: 1250px;
+    padding: 50px 230px;
+}
+
+.instagram-logo {
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #525252;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+
+.instagtam-account {
+    color: #525252;
+    line-height: 58px;
 
 }
