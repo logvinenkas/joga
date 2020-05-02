@@ -3,7 +3,14 @@
     padding: 0px;
 }
 
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .container {
+    border: 1px solid #212121;
     width: 1440px;
     margin: auto;
 }
@@ -11,6 +18,7 @@
 .header {
     height: 80px;
 }
+
 
 .header-logo {
     width: 50px;
@@ -46,11 +54,7 @@
 
 }
 
-.header-menu li {
-    display: inline;
-    background-position: center;
-    background-size: 10px;
-}
+
 
 .point-menu {
     padding-left: 36px;
@@ -63,12 +67,13 @@
     padding-left: 58px;
     color: black;
     text-decoration: none;
-    
-    
+
+
 }
 
+
 /*
-li:nth-child(7) {
+.list-menu a:nth-child(7) {
     background-image: url('img/promotion-bg.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -77,3 +82,29 @@ li:nth-child(7) {
     background-size: cover;
 }
 */
+
+.balance-body-block {
+    width: 1440px;
+    height: 725px;
+    background: linear-gradient(180deg, #F795A4 0%, #ED6EA1 100%);
+    position: relative;
+}
+
+.lotus-img {
+    background: url(lotus-flower-black-and-white-png-big-image-png-2178.png);
+    mix-blend-mode: soft-light;
+    position: absolute;
+    width: 800px;
+    height: 456.19px;
+    right: 0;
+    bottom: 0;
+}
+
+.yoga-trener {
+    position: absolute;
+    width: 625px;
+    height: 719.34px;
+    right: 68px;
+    top: 99px;
+
+}
