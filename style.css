@@ -234,6 +234,7 @@
 .insideourstudio-gallery-single-img:hover .zoom-icon{
     display:block;
 }
+
 .zoom-icon {
     position: absolute;
     display: none;
@@ -264,5 +265,43 @@
 .instagtam-account {
     color: #525252;
     line-height: 58px;
+}
 
+.followusoninstagram-gallery-block {
+    margin-top: 50px;
+}
+
+.followusoninstagram-gallery-single-img {
+    display: flex;
+    float: left;
+    height: 299px;
+    position: relative;
+    background-color: #3C3C3C;
+}
+
+.followusoninstagram-gallery-single-img:first-child img{
+    border-radius: 50px 0 0 0;
+}
+
+.followusoninstagram-gallery-single-img:last-child img{
+    border-radius: 0 50px 0 0;
+}
+
+.followusoninstagram-gallery-single-img:nth-child(2n) {
+    margin: 0 60px;
+}
+
+.followusoninstagram-gallery-block-second-line {
+    margin-top: 35px;
+}
+
+.followusoninstagram-gallery-single-img-link img {
+}
+
+.followusoninstagram-gallery-single-img-link:hover img {
+    opacity: .5;
+}
+
+.followusoninstagram-gallery-single-img:hover .zoom-icon{
+    display:block;
 }
