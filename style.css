@@ -231,7 +231,7 @@
     opacity: .5;
 }
 
-.insideourstudio-gallery-single-img:hover .zoom-icon{
+.insideourstudio-gallery-single-img:hover .zoom-icon {
     display:block;
 }
 
@@ -244,6 +244,21 @@
     left: 45%;
     background-image: url(img/icons8-zoom-in-1.png);
 }
+
+.insideourstudio-gallery-single-img:hover .zoom-background {
+    display: block;
+}
+
+.zoom-background {
+    display: none;
+    background-color: black;
+    width: 280px;
+    height: 206px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+
 
 /* Follow us on Instagram */
 
