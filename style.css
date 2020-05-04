@@ -232,7 +232,7 @@
 }
 
 .insideourstudio-gallery-single-img:hover .zoom-icon {
-    display:block;
+    display: block;
 }
 
 .zoom-icon {
@@ -315,11 +315,11 @@
 }
 
 .followusoninstagram-gallery-single-img:hover .zoom-icon {
-    display:block;
+    display: block;
 }
 
 .followusoninstagram-gallery-single-img:hover .zoom-background {
-    display:block;
+    display: block;
 }
 
 
@@ -338,8 +338,49 @@
     margin: 0 auto;
 }
 
+.meet-our-teachers__main {
+    width: 980px;
+    margin: 0 auto;
+}
+
 .meet-our-teachers__gallery {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
+}
 
+.meet-our-teachers__single-photo-block {
+    position: relative;
+}
+
+.meet-our-teachers__single-photo-block:hover .zoom-icon {
+    display: block;
+}
+
+.meet-our-teachers__single-photo-block:hover .zoom-background {
+    display: block;
+}
+
+.forward-button,
+.next-button {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    background-color: #F17AA0;
+    border-radius: 5px;
+    top: 40%
+}
+
+.forward-button {
+    left: -50px;
+}
+
+.next-button {
+    right: -50px;
+}
+
+.button-icon {
+    position: absolute;
+    top: 25%;
+    left: 30%
 }
