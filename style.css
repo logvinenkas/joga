@@ -204,11 +204,11 @@
 
 .insideourstudio-gallery-block {
     margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .insideourstudio-gallery-single-img {
-    display: flex;
-    float: left;
     background-color: #3C3C3C;
     height: 206px;
     border-radius: 5px;
@@ -282,16 +282,16 @@
     line-height: 58px;
 }
 
-.followusoninstagram-gallery-block clearfix {
-    display: inline;
-}
-
 .followusoninstagram-gallery-block {
     margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .followusoninstagram-gallery-block-margin {
     margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .followusoninstagram-gallery-single-img {
@@ -336,4 +336,10 @@
 .meet-our-teachers__header {
     width: 980px;
     margin: 0 auto;
+}
+
+.meet-our-teachers__gallery {
+    display: flex;
+    justify-content: space-around;
+
 }
