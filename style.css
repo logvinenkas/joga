@@ -251,7 +251,7 @@
 
 .zoom-background {
     display: none;
-    background-color: black;
+    background-color: #3C3C3C;
     width: 280px;
     height: 206px;
     border-radius: 5px;
@@ -282,8 +282,16 @@
     line-height: 58px;
 }
 
+.followusoninstagram-gallery-block clearfix {
+    display: inline;
+}
+
 .followusoninstagram-gallery-block {
     margin-top: 50px;
+}
+
+.followusoninstagram-gallery-block-margin {
+    margin-top: 30px;
 }
 
 .followusoninstagram-gallery-single-img {
@@ -291,32 +299,40 @@
     float: left;
     height: 299px;
     position: relative;
-    background-color: #3C3C3C;
+    align-items: center;
+    justify-content: center;
 }
 
-.followusoninstagram-gallery-single-img:first-child img{
-    border-radius: 50px 0 0 0;
-}
-
-.followusoninstagram-gallery-single-img:last-child img{
-    border-radius: 0 50px 0 0;
+.zoom-background-big {
+    width: 280px;
+    height: 299px;
+    opacity: .5;
+    border-radius: 0;
 }
 
 .followusoninstagram-gallery-single-img:nth-child(2n) {
     margin: 0 60px;
 }
 
-.followusoninstagram-gallery-block-second-line {
-    margin-top: 35px;
-}
-
-.followusoninstagram-gallery-single-img-link img {
-}
-
-.followusoninstagram-gallery-single-img-link:hover img {
-    opacity: .5;
-}
-
-.followusoninstagram-gallery-single-img:hover .zoom-icon{
+.followusoninstagram-gallery-single-img:hover .zoom-icon {
     display:block;
+}
+
+.followusoninstagram-gallery-single-img:hover .zoom-background {
+    display:block;
+}
+
+
+
+/* Meet our teachers */
+
+.meet-our-teachers {
+    width: 1080px;
+    height: 506px;
+    margin: 0 auto;
+}
+
+.meet-our-teachers__header {
+    width: 980px;
+    margin: 0 auto;
 }
