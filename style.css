@@ -263,7 +263,7 @@
 /* Follow us on Instagram */
 
 .followusoninstagram-block {
-    height: 1250px;
+    height: 1200px;
     padding: 50px 230px;
 }
 
@@ -344,6 +344,7 @@
 }
 
 .meet-our-teachers__gallery {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -351,6 +352,7 @@
 
 .meet-our-teachers__single-photo-block {
     position: relative;
+    text-align: center;
 }
 
 .meet-our-teachers__single-photo-block:hover .zoom-icon {
@@ -368,7 +370,7 @@
     height: 50px;
     background-color: #F17AA0;
     border-radius: 5px;
-    top: 40%
+    top: 35%
 }
 
 .forward-button {
@@ -382,5 +384,18 @@
 .button-icon {
     position: absolute;
     top: 25%;
-    left: 30%
+    left: 26%;
+}
+
+.meet-our-teachers__name {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.meet-our-teachers__occupation {
+
+    font-size: 14px;
+    line-height: 150%;
 }
