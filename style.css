@@ -264,7 +264,7 @@
 
 .followusoninstagram-block {
     height: 1120px;
-    padding: 50px 230px;
+    margin: 50px 230px;
 }
 
 .instagram-logo {
@@ -350,7 +350,6 @@
 }
 
 .meet-our-teachers__single-photo-block {
-    position: relative;
     text-align: center;
 }
 
@@ -369,11 +368,12 @@
     height: 50px;
     background-color: #F17AA0;
     border-radius: 5px;
-    top: 45%
+    top: 45%;
 }
 
 .forward-button {
     left: -50px;
+    text-align: center;
 }
 
 .next-button {
@@ -415,4 +415,45 @@
     position: absolute;
     top: -2px;
     left: 37%;
+}
+
+/* What our customers say */
+
+.what-our-customers-say {
+    width: 1080px;
+    height: 512px;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+
+.what-our-customers__main {
+    width: 980px;
+    margin: 50px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.what-our-customers__single-photo-block {
+    width: 480px;
+    height: 248px;
+    background: #FAFAFA;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    padding: 26px 0;
+
+}
+.what-our-customers-say__texts {
+    margin: 0 80px;
+}
+
+.what-our-customers-say__opinion {
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.what-our-customers__single-photo-block img {
+    border-radius: 50%;
 }
