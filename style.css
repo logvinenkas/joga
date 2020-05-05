@@ -17,6 +17,14 @@
     color: #525252;
 }
 
+.title-h2 {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 48px;
+}
+
 .header {
     height: 80px;
 }
@@ -150,11 +158,6 @@
 .whywedoyoga-block {
     height: 330px;
     padding: 100px 230px;
-}
-
-.whywedoyoga-h2 {
-    font-size: 37px;
-    line-height: 48px;
 }
 
 .whywedoyoga-desc {
@@ -294,6 +297,10 @@
     justify-content: space-around;
 }
 
+.meet-our-teachers__single-photo-block {
+    position: relative;
+}
+
 .followusoninstagram-gallery-single-img {
     display: flex;
     float: left;
@@ -353,7 +360,7 @@
     text-align: center;
 }
 
-.meet-our-teachers__single-photo-block:hover .zoom-icon {
+.meet-our-teachers__single-photo-block:hover .meet-our-teachers__zoom-icon {
     display: block;
 }
 
@@ -417,18 +424,28 @@
     left: 37%;
 }
 
+.meet-our-teachers__zoom-icon {
+    position: absolute;
+    display: none;
+    width: 30px;
+    height: 30px;
+    top: 39%;
+    left: 45%;
+    background-image: url(img/icons8-zoom-in-1.png);
+}
+
 /* What our customers say */
 
 .what-our-customers-say {
     width: 1080px;
-    height: 512px;
+    height: 430px;
     margin: 50px auto;
-    padding: 50px 0;
 }
 
 .what-our-customers__main {
     width: 980px;
-    margin: 50px auto;
+    margin: 0 auto;
+    margin-top: 50px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -443,6 +460,7 @@
     padding: 26px 0;
 
 }
+
 .what-our-customers-say__texts {
     margin: 0 80px;
 }
@@ -456,4 +474,130 @@
 
 .what-our-customers__single-photo-block img {
     border-radius: 50%;
+}
+
+.what-our-customers__activeline {
+    width: 100px;
+    height: 5px;
+    background: #F17AA0;
+    border-radius: 5px;
+    position: absolute;
+    top: -2px;
+    left: 0%;
+}
+
+/* Pricing plan */
+
+.pricing-plan {
+    width: 980px;
+    height: 400px;
+    margin: 50px auto;
+}
+
+.pricing-plan__main {
+    width: 100%;
+    margin-top: 50px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.pricing-plan__single-plan {
+    width: 280px;
+    height: 300px;
+    background: #FAFAFA;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-plan__logo img {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.pricing-plan__logo {
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.pricing-plan__title {
+    margin-top: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.pricing-plan__button {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 55px;
+    width: 168px;
+    height: 40px;
+    line-height: 38px;
+    background: #F17AA0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.pricing-plan__single-plan:hover {
+    background: #F17AA0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.pricing-plan__single-plan:hover .pricing-plan__button {
+    background: #FFFFFF;
+    color: #F17AA0;
+}
+
+/* Contact information */
+
+.contact-information {
+    width: 1180px;
+    height: 750px;
+    margin: 50px auto;
+    padding-top: 50px;
+}
+.contact-indformation__header {
+    width: 980px;
+    margin: 50px auto;
+}
+
+.contact-information__map {
+    position: relative;
+}
+.contact-information__free-lesson {
+    padding: 25px 58px;
+    position: absolute;
+    width: 264px;
+    height: 420px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    top: 90px;
+    right: 100px;
+}
+
+.contact-information__free-lesson-header {
+    font-size: 20px;
+    line-height: 26px;
+    color: #525252;
+}
+
+.contact-information__name input,
+.contact-information__phone input,
+.contact-information__email input {
+    margin-left: 27px;
+    border: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #525252;
+    opacity: 0.8;
 }
