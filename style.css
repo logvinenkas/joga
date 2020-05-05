@@ -11,6 +11,7 @@
 
 .container {
     width: 1440px;
+/*    height: ;*/
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: PT Sans;
@@ -587,17 +588,147 @@
 
 .contact-information__free-lesson-header {
     font-size: 20px;
-    line-height: 26px;
     color: #525252;
+    margin-bottom: 22px;
 }
 
-.contact-information__name input,
-.contact-information__phone input,
-.contact-information__email input {
-    margin-left: 27px;
+.contact-information__textform input {
     border: 0px;
     font-size: 14px;
-    line-height: 18px;
+    color: #525252;
+    opacity: 0.8;
+    margin-left: 7px;
+    outline: none;
+}
+
+.contact-information__line {
+    border-bottom: 1px solid #525252;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.contact-information__agree {
+    margin-bottom: 20px;
+}
+.agree-text {
+    font-size: 14px;
     color: #525252;
     opacity: 0.8;
 }
+
+/* Нестандатный чек бокс с сайта doodlenerd.com/html-control/css-checkbox-generator */
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    cursor: pointer;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    border: 1px solid #525252;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #ffffff;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #cccccc;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #cccccc;
+}
+.control input:disabled ~ .control_indicator {
+    background: #ffffff;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 3px;
+    width: 3px;
+    height: 9px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #ffffff;
+}
+
+/* Конец чекбокса */
+
+.contact-information__submit input {
+    width: 168px;
+    height: 40px;
+    background: #F17AA0;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: 0px;
+}
+
+.contact-information__submit input:focus {
+    border: 0px;
+    outline:none;
+}
+
+.contact-information__submit input:hover {
+    opacity: 0.8;
+}
+
+.contact-information__header {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #525252;
+}
+
+.contact-information__subtitle {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #525252;
+}
+
+/* Footer */
+
+.footer {
+    padding: 0 160px;
+    height: 300px;
+    background: #222222;
+}
+
+.footer__logo-social {
+    width: 285px;
+}
+.footer__header-logo {
+    padding-left: 0px;
+
+}
+.greatwords {clear: both;}
